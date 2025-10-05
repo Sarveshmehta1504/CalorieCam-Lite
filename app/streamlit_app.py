@@ -164,11 +164,5 @@ with colL:
             cam_img = overlay_cam(model, img, x.to(device), class_idx)
         st.image(cam_img, caption="Grad‑CAM heatmap", use_container_width=True)
 
-with colR:
-    st.write("**Prototype Classes Available:**")
-    st.json(protos.get("classes", {}))
-    st.write("**Base Classes:**")
-    st.write(list(inv_label.values()))
-    st.caption("Tip: add few‑shot classes via `src/adapt_fewshot.py`")
+st.caption("© 2025 CalorieCam Lite")
 
-st.caption("© 2025 CalorieCam Lite — Demo project for educational use.")
