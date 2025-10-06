@@ -1,0 +1,114 @@
+# CalorieCam Lite - Git Ignore Rules
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch Model Files (Large Files)
+artifacts/base_model/*.pt
+*.pth
+*.pkl
+
+# Training Data (Large Files)
+data/combined_food/
+data/food_images/
+data/synthetic_food/
+data/raw/
+*.tar.gz
+*.zip
+
+# Kaggle Data
+data/kaggle_food_calories.csv
+data/enhanced_calorie_map.csv
+data/calorie_map_backup.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Streamlit
+.streamlit/
+
+# Test images (keep only essential ones)
+test_*.jpg
+!test_pizza.jpg
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
