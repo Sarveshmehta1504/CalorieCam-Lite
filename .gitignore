@@ -44,6 +44,11 @@ data/raw/
 *.tar.gz
 *.zip
 
+# Large Dataset Files
+data/raw/**
+**/food-101.tar.gz
+**/food-101/**
+
 # Kaggle Data
 data/kaggle_food_calories.csv
 data/enhanced_calorie_map.csv
